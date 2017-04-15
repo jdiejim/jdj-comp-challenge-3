@@ -19,61 +19,85 @@
       </section>
       <section class="main-secondary">
 
-        <table class="table-job-desc">
+        <table class="job-description">
           <thead>
-            <tr class="table-main-header">
+            <tr class="head-row">
               <th class="table-primary-header">Job Description</th>
-              <td class="table-secondary-header">
-                <button class="table-edit-btn" type="button" name="edit">edit</button>
+              <td class="head-data">
+                <button class="edit-btn" type="button" name="edit">edit</button>
               </td>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th class="table-sub-header">Position Title</th>
-              <td class="table-data">Customer Service Representative</td>
+              <td class="main-data">Customer Service Representative</td>
             </tr>
             <tr>
               <th class="table-sub-header">Location</th>
-              <td class="table-data">San Francisco, CA</td>
+              <td class="main-data">San Francisco, CA</td>
             </tr>
             <tr>
               <th class="table-sub-header">Employment Type</th>
-              <td class="table-data">Full-time</td>
+              <td class="main-data">Full-time</td>
             </tr>
             <tr>
               <th class="table-sub-header">Experience</th>
-              <td class="table-data">Mid-level</td>
+              <td class="main-data">Mid-level</td>
             </tr>
             <tr>
               <th class="table-sub-header">Status</th>
-              <td class="table-data">Open</td>
+              <td class="main-data">Open</td>
             </tr>
             <tr>
-              <th class="table-sub-header">Description</th>
-              <td class="table-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <th class="table-sub-header description">Description</th>
+              <td class="main-data description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </td>
             </tr>
             <tr>
               <th class="table-sub-header">Hiring Lead</th>
-              <td class="table-data">
-                <div class="table-hiring-img"></div>
-                <p class="table-hiring-name">Charles Xavier</p>
+              <td class="main-data">
+                <div class="hiring-img"></div>
+                <p class="hiring-name">Charles Xavier</p>
               </td>
             </tr>
             <tr>
               <th class="table-sub-header">Approved Salary</th>
-              <td class="table-data-salary">$58,000</td>
+              <td class="main-data-salary">$58,000</td>
             </tr>
           </tbody>
         </table>
 
-
-        <section>
-          <section>
-
+        <section class="share-wrapper">
+          <section class="social-media-wrapper">
+            <a href="#" class="social-media-link facebook" title="Facebook">Post to Facebook</a>
+            <a href="#" class="social-media-link twitter" title="Twitter">Tweet this Job</a>
+            <a href="#" class="social-media-link linkedin" title="Linkedin">Post to Linkedin</a>
           </section>
-          <section>
+          <section class="widget-wrapper">
+            <article class="widget">
+              <h3 class="share-header job-link">Link to this Job</h3>
+              <p class="share-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <form class="widget-form" action="index.html" method="post">
+                <input class="widget-input" type="text" name="" value="http://frontend.turing.io/projects/m1-static-comp-3.html" readonly>
+                <button class="copy-btn" type="button" name="button">Copy</button>
+              </form>
+            </article>
+            <article class="widget">
+              <h3 class="share-header widget-embeds">Use the Button Widget</h3>
+              <p class="share-description">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+              <form class="widget-form" action="index.html" method="post">
+                <input class="widget-input" type="text" name="" value="<script type='text/javascript'> function hello() { console.log('hello world'); }</script>" readonly>
+                <button class="copy-btn" type="button" name="button">Copy</button>
+              </form>
+            </article>
+            <article class="widget">
+              <h3 class="share-header resume">Upload resumes by Email</h3>
+              <p class="share-description">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+              <form class="widget-form" action="index.html" method="post">
+                <input class="widget-input" type="text" name="" value="daBoss@xmen.com" readonly>
+              </form>
+            </article>
 
           </section>
 
