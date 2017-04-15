@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EDF2F6;
+}
+
+/*----- Table -----*/
+
+.table-job-desc {
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #6F7E95;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+tbody tr:last-child {
+  border: none;
+}
+
+tr {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+th {
+  text-transform: uppercase;
+  text-align: left;
+  width: 30%;
+}
+td {
+  width: 70%;
+}
+
+th,
+td {
+  padding: 20px 0;
+  text-align: left;
+}
+
+
+.table-main-header {
+  color: white;
+}
+
+.table-main-header {
+  font-size: 14px;
+}
+
+.table-edit-btn {
+  width: 65px;
+  text-align: right;
+  padding: 8px 10px;
+  border: none;
+  color: white;
+  display: block;
+  background: url(/assets/edit.svg) no-repeat #7C8CA8;
+  background-size: 12px;
+  background-position: 12px 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table-secondary-header,
+.table-data,
+.table-data-salary {
+  padding-left: 20px;
+}
+
+
+.table-sub-header {
+  color: #6F7E95;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.table-data-salary {
+  color: #6F7E95;
+  font-weight: bold;
+}
+
+.table-hiring-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+float: left;
+margin-right: 15px;
+background: url(/images/manager.png) no-repeat center #4e4e4e;
+background-size: 45px;
+}
+
+.table-hiring-name {
+  float: left;
+}
