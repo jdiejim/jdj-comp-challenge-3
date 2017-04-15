@@ -42,16 +42,22 @@ tspan {
 }
 
 /*----- Table -----*/
-
 .job-description {
   background-color: #FFFFFF;
   border-collapse: collapse;
-  width: 60%;
+  width: 100%;
   /*min-width: 300px;
   max-width: 500px;*/
 }
 thead {
   background-color: #6F7E95;
+}
+
+tr {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 tbody tr {
@@ -61,26 +67,22 @@ tbody tr:last-child {
   border: none;
 }
 
-tr {
-  display: flex;
-  width: 95%;
-  margin: 0 auto;
-  align-items: center;
-}
 th {
   text-transform: uppercase;
   width: 30%;
 }
+
+td {
+  width: 70%;
+}
+
 th,
 td {
   padding: 20px 0;
   text-align: left;
 }
-td {
-  width: 70%;
-}
 
-.head-row {
+.header-row {
   color: white;
   font-size: 14px;
 }
@@ -99,7 +101,7 @@ td {
   font-weight: bold;
 }
 
-.head-data,
+.header-data,
 .main-data,
 .main-data-salary {
   padding-left: 20px;
@@ -111,9 +113,8 @@ td {
   font-weight: bold;
 }
 
-.main-data-salary {
-  color: #6F7E95;
-  font-weight: bold;
+.description {
+  align-self: flex-start;
 }
 
 .hiring-img {
@@ -130,13 +131,14 @@ background-size: 45px;
   float: left;
 }
 
-.description {
-  align-self: flex-start;
+.main-data-salary {
+  color: #6F7E95;
+  font-weight: bold;
 }
 
 /*----- Share Wrapper -----*/
 .share-wrapper {
-  width: 35%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -177,15 +179,11 @@ background-size: 45px;
 
 /*----- Widgets -----*/
 .widget-wrapper {
-  /*background-color: orange;*/
   max-width: 300px;
   min-width: 225px;
   margin: 0 auto;
 }
 .widget {
-  /*border-bottom: 4px solid #dddddd;*/
-  /*height: 300px;*/
-  /*background-color: blue;*/
   border-bottom: 3px solid #dddddd;
   padding: 0 0 28px;
 }
@@ -194,7 +192,6 @@ background-size: 45px;
   padding: 0;
 }
 .widget-form {
-  /*border-bottom: 3px solid #dddddd;*/
   display: flex;
 }
 
@@ -241,4 +238,137 @@ background-size: 45px;
 .share-description {
   font-size: 12px;
   line-height: 16px;
+}
+
+/*----- Media Query -----*/
+@media screen and (min-width: 750px) {
+  /* FIXME: resizing problem */
+  /*----- Main Secondary -----*/
+  .main-secondary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 10px 0;
+  }
+
+  /*----- Table -----*/
+  .job-description {
+    width: 60%;
+  }
+
+  th {
+    width: 30%;
+  }
+
+  td {
+    width: 70%;
+  }
+
+
+
+
+
+  /*----- Share Wrapper -----*/
+  .share-wrapper {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 10px;
+  }
+
+  /*----- Social Media Wrapper -----*/
+  .social-media-wrapper {
+    /*background-color: orange;*/
+  }
+
+  .social-media-link {
+    max-width: 300px;
+    min-width: 225px;
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 15px;
+  }
+
+  .facebook {
+    background: url(/assets/facebook.svg) #4B70C2 no-repeat;
+    background-position: 20px 50%;
+    background-size: 20px;
+  }
+  .twitter {
+    background: url(/assets/twitter.svg) #03ABED no-repeat;
+    background-position: 20px 50%;
+    background-size: 20px;
+  }
+  .linkedin {
+    background: url(/assets/linkedin.svg) #0381BC no-repeat;
+    background-position: 20px 50%;
+    background-size: 20px;
+  }
+
+  /*----- Widgets -----*/
+  .widget-wrapper {
+    max-width: 300px;
+    min-width: 225px;
+    margin: 0 auto;
+  }
+  .widget {
+    border-bottom: 3px solid #dddddd;
+    padding: 0 0 28px;
+  }
+  .widget:last-child {
+    border: none;
+    padding: 0;
+  }
+  .widget-form {
+    display: flex;
+  }
+
+
+  .widget-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    margin: 0;
+    text-overflow: ellipsis;
+  }
+  .widget-input:last-child {
+    width: 100%;
+  }
+  .copy-btn {
+    background-color: #49B9BF;
+    color: #FFFFFF;
+    border: none;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .share-header {
+    color: #6F7E95;
+    text-indent: 30px;
+  }
+
+  .job-link {
+    background: url(/assets/globe.svg) no-repeat;
+    background-position: 0 50%;
+    background-size: 20px;
+  }
+  .widget-embeds {
+    background: url(/assets/widget.svg) no-repeat;
+    background-position: 0 50%;
+    background-size: 20px;
+  }
+  .resume {
+    background: url(/assets/plane.svg) no-repeat;
+    background-position: 0 50%;
+    background-size: 20px;
+
+  }
+  .share-description {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
