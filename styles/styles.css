@@ -9,7 +9,6 @@ body {
 
 /*----- Main Primary -----*/
 .main-primary {
-
 }
 
 .donut-wrapper {
@@ -30,9 +29,6 @@ tspan {
   font-size: 2px;
 }
 
-
-
-/* FIXME: resizing problem */
 /*----- Main Secondary -----*/
 .main-secondary {
   display: flex;
@@ -46,8 +42,7 @@ tspan {
   background-color: #FFFFFF;
   border-collapse: collapse;
   width: 100%;
-  /*min-width: 300px;
-  max-width: 500px;*/
+  margin: 0 0 20px;
 }
 thead {
   background-color: #6F7E95;
@@ -57,7 +52,7 @@ tr {
   display: flex;
   width: 95%;
   margin: 0 auto;
-  align-items: center;
+  flex-direction: column;
 }
 
 tbody tr {
@@ -69,22 +64,26 @@ tbody tr:last-child {
 
 th {
   text-transform: uppercase;
-  width: 30%;
-}
-
-td {
-  width: 70%;
 }
 
 th,
 td {
-  padding: 20px 0;
+  width: 100%;
+  padding: 10px;
   text-align: left;
 }
 
 .header-row {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-data {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .edit-btn {
@@ -101,12 +100,6 @@ td {
   font-weight: bold;
 }
 
-.header-data,
-.main-data,
-.main-data-salary {
-  padding-left: 20px;
-}
-
 .table-sub-header {
   color: #6F7E95;
   font-size: 12px;
@@ -121,10 +114,10 @@ td {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-float: left;
-margin-right: 15px;
-background: url(/images/manager.png) no-repeat center #4e4e4e;
-background-size: 45px;
+  float: left;
+  margin-right: 15px;
+  background: url(/images/manager.png) no-repeat center #4e4e4e;
+  background-size: 45px;
 }
 
 .hiring-name {
@@ -146,13 +139,8 @@ background-size: 45px;
 }
 
 /*----- Social Media Wrapper -----*/
-.social-media-wrapper {
-  /*background-color: orange;*/
-}
-
 .social-media-link {
-  max-width: 300px;
-  min-width: 225px;
+  width: 100%;
   display: block;
   text-decoration: none;
   color: #FFFFFF;
@@ -163,24 +151,26 @@ background-size: 45px;
 
 .facebook {
   background: url(/assets/facebook.svg) #4B70C2 no-repeat;
-  background-position: 20px 50%;
-  background-size: 20px;
+
 }
 .twitter {
   background: url(/assets/twitter.svg) #03ABED no-repeat;
-  background-position: 20px 50%;
-  background-size: 20px;
+
 }
 .linkedin {
   background: url(/assets/linkedin.svg) #0381BC no-repeat;
+}
+
+.facebook,
+.twitter,
+.linkedin {
   background-position: 20px 50%;
   background-size: 20px;
 }
 
 /*----- Widgets -----*/
 .widget-wrapper {
-  max-width: 300px;
-  min-width: 225px;
+  width: 100%;
   margin: 0 auto;
 }
 .widget {
@@ -194,7 +184,6 @@ background-size: 45px;
 .widget-form {
   display: flex;
 }
-
 
 .widget-input {
   width: 80%;
@@ -221,28 +210,65 @@ background-size: 45px;
 
 .job-link {
   background: url(/assets/globe.svg) no-repeat;
-  background-position: 0 50%;
-  background-size: 20px;
+
 }
 .widget-embeds {
   background: url(/assets/widget.svg) no-repeat;
-  background-position: 0 50%;
-  background-size: 20px;
+
 }
 .resume {
   background: url(/assets/plane.svg) no-repeat;
+}
+
+.job-link,
+.widget-embeds,
+.resume {
   background-position: 0 50%;
   background-size: 20px;
-
 }
+
 .share-description {
   font-size: 12px;
   line-height: 16px;
 }
 
-/*----- Media Query -----*/
+@media screen and (min-width: 460px) {
+  /*----- Main Secondary -----*/
+  /*----- Table -----*/
+  tr {
+    flex-direction: row;
+  }
+
+  th {
+    width: 30%;
+  }
+
+  td {
+    width: 70%;
+  }
+
+  th,
+  td {
+    padding: 20px 0;
+  }
+
+  .header-row {
+    font-size: 14px;
+  }
+
+  .header-data {
+    display: block;
+  }
+
+  .header-data,
+  .main-data,
+  .main-data-salary {
+    padding-left: 20px;
+  }
+
+  /* FIXME: social media btn sizes */
+
 @media screen and (min-width: 750px) {
-  /* FIXME: resizing problem */
   /*----- Main Secondary -----*/
   .main-secondary {
     display: flex;
@@ -254,121 +280,24 @@ background-size: 45px;
   /*----- Table -----*/
   .job-description {
     width: 60%;
+    margin: 0;
   }
 
-  th {
-    width: 30%;
-  }
-
-  td {
-    width: 70%;
-  }
-
-
-
-
-
+  /* FIXME: sizing problem between table and share */
   /*----- Share Wrapper -----*/
   .share-wrapper {
     width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 0 10px;
   }
 
   /*----- Social Media Wrapper -----*/
-  .social-media-wrapper {
-    /*background-color: orange;*/
-  }
-
   .social-media-link {
     max-width: 300px;
     min-width: 225px;
-    display: block;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 50px;
-    margin: 0 auto 15px;
-  }
-
-  .facebook {
-    background: url(/assets/facebook.svg) #4B70C2 no-repeat;
-    background-position: 20px 50%;
-    background-size: 20px;
-  }
-  .twitter {
-    background: url(/assets/twitter.svg) #03ABED no-repeat;
-    background-position: 20px 50%;
-    background-size: 20px;
-  }
-  .linkedin {
-    background: url(/assets/linkedin.svg) #0381BC no-repeat;
-    background-position: 20px 50%;
-    background-size: 20px;
   }
 
   /*----- Widgets -----*/
   .widget-wrapper {
     max-width: 300px;
     min-width: 225px;
-    margin: 0 auto;
-  }
-  .widget {
-    border-bottom: 3px solid #dddddd;
-    padding: 0 0 28px;
-  }
-  .widget:last-child {
-    border: none;
-    padding: 0;
-  }
-  .widget-form {
-    display: flex;
-  }
-
-
-  .widget-input {
-    width: 80%;
-    padding: 10px;
-    border: none;
-    margin: 0;
-    text-overflow: ellipsis;
-  }
-  .widget-input:last-child {
-    width: 100%;
-  }
-  .copy-btn {
-    background-color: #49B9BF;
-    color: #FFFFFF;
-    border: none;
-    width: 20%;
-    padding: 10px;
-  }
-
-  .share-header {
-    color: #6F7E95;
-    text-indent: 30px;
-  }
-
-  .job-link {
-    background: url(/assets/globe.svg) no-repeat;
-    background-position: 0 50%;
-    background-size: 20px;
-  }
-  .widget-embeds {
-    background: url(/assets/widget.svg) no-repeat;
-    background-position: 0 50%;
-    background-size: 20px;
-  }
-  .resume {
-    background: url(/assets/plane.svg) no-repeat;
-    background-position: 0 50%;
-    background-size: 20px;
-
-  }
-  .share-description {
-    font-size: 12px;
-    line-height: 16px;
   }
 }
