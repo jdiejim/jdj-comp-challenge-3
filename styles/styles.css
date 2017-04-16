@@ -5,26 +5,56 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #EDF2F6;
+  margin: 0;
+  padding: 0;
+}
+
+/*----- Header -----*/
+.header {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+
+.header-nav {
+  align-self: flex-end;
+}
+.header-tag {
+  display: inline-block;
+  color: #9EA3A8;
+  text-decoration: none;
+  margin: 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #FFFFFF;
+}
+.header-tag:hover {
+  color: #6C6D73;
+  border-bottom: 5px solid #14A0FE;
 }
 
 /*----- Main Primary -----*/
 .main-primary {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  padding-top: 60px;
 }
 
 /*----- Donut Charts -----*/
 .donut-wrapper {
-  width: 60%;
+  width: 100%;
 }
 .donut-charts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;;
 }
 
 .chart-btn {
-  margin: 0 auto;
+  margin: 30px auto 0;
   background-color: #FFFFFF;
   border-radius: 20px;
   border: 1px solid #dddddd;
@@ -45,8 +75,8 @@ body {
 }
 
 .donut-chart {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border: 10px solid #DBE4E9;
   border-radius: 50%;
   display: flex;
@@ -54,18 +84,20 @@ body {
   justify-content: center;
   align-items: center;
   transform: rotate(-45deg);
-  margin: 0 10px 30px;
+  /*margin: 0 10px 30px;*/
 }
 
 .donut-text h1 {
   font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
   margin: 0 0 5px;
   color: #6F7E95;
 }
 .donut-text p {
   margin: 0;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
 }
 .donut-text {
   text-align: center;
@@ -87,10 +119,11 @@ body {
 
 /*----- Bar Chart -----*/
 .bar-chart-wrapper {
-  width: 40%;
+  width: 100%;
 }
 .bar-chart {
   margin: 0;
+  min-width: 290px;
   height: 150px;
   background: url(../images/bar-chart.png) no-repeat center;
   background-size: contain;
@@ -106,6 +139,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px 10px 0;
+  width: 100%;
 }
 
 /*----- Table -----*/
@@ -113,7 +147,7 @@ body {
   background-color: #FFFFFF;
   border-collapse: collapse;
   width: 100%;
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
 }
 thead {
   background-color: #6F7E95;
@@ -304,6 +338,21 @@ td {
 }
 
 @media screen and (min-width: 460px) {
+  /*----- Main Primary -----*/
+  /*----- Donut Charts -----*/
+  .donut-wrapper {
+    width: 100%;
+  }
+
+  .donut-charts {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*----- Bar Chart -----*/
+  .bar-chart-wrapper {
+    width: 100%;
+  }
   /*----- Main Secondary -----*/
   /*----- Table -----*/
   tr {
@@ -340,14 +389,27 @@ td {
   /* FIXME: social media btn sizes */
 
 @media screen and (min-width: 750px) {
-  /*----- Main Secondary -----*/
-  .main-secondary {
+  /*----- Main Primary -----*/
+  /*----- Donut Charts -----*/
+  .donut-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .donut-charts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px 10px 0;
   }
 
+  /*----- Bar Chart -----*/
+  .bar-chart-wrapper {
+    width: 40%;
+  }
+
+  /*----- Main Secondary -----*/
   /*----- Table -----*/
   .job-description {
     width: 60%;
@@ -360,13 +422,8 @@ td {
     width: 35%;
   }
 
-  /*----- Social Media Wrapper -----*/
-  .social-media-link {
-    max-width: 300px;
-    min-width: 225px;
-  }
-
   /*----- Widgets -----*/
+  .social-media-link,
   .widget-wrapper {
     max-width: 300px;
     min-width: 225px;
