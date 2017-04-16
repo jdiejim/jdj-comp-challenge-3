@@ -9,24 +9,81 @@ body {
 
 /*----- Main Primary -----*/
 .main-primary {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .donut-wrapper {
+  width: 60%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-tspan {
-  fill: #535f70;
-  font-family: 'Russo One', sans-serif;
-}
-.primary-donut-text {
-  font-size: 20px;
+.chart-btn {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #dddddd;
+  padding: 10px 20px;
   font-weight: bold;
-
+  font-size: 10px;
+  color: #373636;
 }
-.secondary-donut-text {
+.chart-btn:hover {
+  background-color: #dddddd;
+  border: 1px solid #dddddd;
+}
+
+.donut-chart {
+  width: 150px;
+  height: 150px;
+  border: 10px solid #DBE4E9;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  margin: 0 10px 30px;
+}
+
+.donut-text h1 {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0 0 5px;
+  color: #6F7E95;
+}
+.donut-text p {
+  margin: 0;
   text-transform: uppercase;
-  font-size: 2px;
+  font-size: 12px;
+}
+.donut-text {
+  text-align: center;
+  transform: rotate(45deg);
+}
+
+.applicants {
+  border-left: 10px solid #4CBCBF;
+  border-top: 10px solid #4CBCBF;
+  border-right: 10px solid #4CBCBF;
+}
+.interviews {
+  border-left: 10px solid #14A0FE;
+  border-top: 10px solid #14A0FE;
+}
+.forwards {
+  border-left: 10px solid #B369B2;
+}
+
+/*----- Bar Chart -----*/
+.bar-chart-wrapper {
+  width: 40%;
+}
+.bar-chart {
+  height: 200px;
+  background: url(../images/bar-chart.png) no-repeat center;
+  background-size: contain;
 }
 
 /*----- Main Secondary -----*/
@@ -93,7 +150,7 @@ td {
   border: none;
   color: white;
   display: block;
-  background: url(/assets/edit.svg) no-repeat #7C8CA8;
+  background: url(../assets/edit.svg) no-repeat #7C8CA8;
   background-size: 12px;
   background-position: 12px 50%;
   text-transform: uppercase;
@@ -116,7 +173,7 @@ td {
   border-radius: 50%;
   float: left;
   margin-right: 15px;
-  background: url(/images/manager.png) no-repeat center #4e4e4e;
+  background: url(../images/manager.png) no-repeat center #4e4e4e;
   background-size: 45px;
 }
 
@@ -150,15 +207,15 @@ td {
 }
 
 .facebook {
-  background: url(/assets/facebook.svg) #4B70C2 no-repeat;
+  background: url(../assets/facebook.svg) #4B70C2 no-repeat;
 
 }
 .twitter {
-  background: url(/assets/twitter.svg) #03ABED no-repeat;
+  background: url(../assets/twitter.svg) #03ABED no-repeat;
 
 }
 .linkedin {
-  background: url(/assets/linkedin.svg) #0381BC no-repeat;
+  background: url(../assets/linkedin.svg) #0381BC no-repeat;
 }
 
 .facebook,
@@ -209,15 +266,15 @@ td {
 }
 
 .job-link {
-  background: url(/assets/globe.svg) no-repeat;
+  background: url(../assets/globe.svg) no-repeat;
 
 }
 .widget-embeds {
-  background: url(/assets/widget.svg) no-repeat;
+  background: url(../assets/widget.svg) no-repeat;
 
 }
 .resume {
-  background: url(/assets/plane.svg) no-repeat;
+  background: url(../assets/plane.svg) no-repeat;
 }
 
 .job-link,
