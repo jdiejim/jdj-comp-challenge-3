@@ -63,10 +63,45 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 0.1em;
+  background-position: 0 50%;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  padding: 0 20px;
 }
 
 .sb-categories-tag {
   font-size: 8px;
+}
+
+.home {
+  background-image: url(../assets/home.svg);
+}
+.jobs {
+  background-image: url(../assets/jobs.svg);
+}
+.sb-resume {
+  background-image: url(../assets/resume.svg);
+}
+.tasks {
+  background-image: url(../assets/tasks.svg);
+}
+.calendar {
+  background-image: url(../assets/calendar.svg);
+}
+.users {
+  background-image: url(../assets/users.svg);
+}
+.location {
+  background-image: url(../assets/sb-location.svg);
+}
+.workflows {
+  background-image: url(../assets/workflows.svg);
+}
+.boards {
+  background-image: url(../assets/boards.svg);
+}
+.social {
+  background-image: url(../assets/social.svg);
 }
 
 /*----- Main -----*/
