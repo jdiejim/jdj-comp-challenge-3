@@ -13,20 +13,82 @@ body {
 .header {
   background-color: #FFFFFF;
   width: 100%;
-  padding: 0 20px;
 }
 
-.header-info-wrapper {
+/*----- Header Nav -----*/
+.header-nav {
   width: 100%;
+  display: flex;
+}
+
+.nav-tab {
+  width: 55px;
+  height: 55px;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+}
+.nav-tab:hover {
+  background-color: #16A4FA;
+}
+
+.search-bar {
+  flex: 2;
+  background: url(../assets/search.svg) no-repeat;
+  border: none;
+  border-right: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background-position: 15px 50%;
+  background-size: 18px;
+  padding-left: 45px;
+  font-size: 14px;
+}
+
+.menu {
+ background-image: url(../assets/menu.svg);
+}
+.menu:hover {
+ background-image: url(../assets/menu-hover.svg);
+}
+
+.new-user {
+ background-image: url(../assets/new-user.svg);
+}
+.new-user:hover {
+ background-image: url(../assets/new-user-hover.svg);
+}
+
+.notifications {
+ background-image: url(../assets/notifications.svg);
+}
+.notifications:hover {
+ background-image: url(../assets/notifications-hover.svg);
+}
+
+.other {
+ background-image: url(../assets/other.svg);
+}
+.other:hover {
+ background-image: url(../assets/other-hover.svg);
+}
+
+/*----- Header Info -----*/
+.header-info-wrapper {
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 35px 0 30px;
 }
 
 .header-info h1 {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 22px;
   color: #6C6D73;
   margin: 0;
 }
@@ -68,20 +130,20 @@ body {
   background-color: #FFFFFF;
   border: 3px solid #dddddd;
   background-position: center;
-  background-size: 60%;
+  background-size: 40%;
   background-repeat: no-repeat;
 }
 
 .open {
-  width: 75px;
-  border-radius: 15px;
+  width: 80px;
+  border-radius: 20px;
   text-align: right;
-  padding-right: 10px;
+  padding-right: 12px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   color: #6C6D73;
   background-image: url(../assets/open.svg);
-  background-position: 10px 50%;
+  background-position: 12px 50%;
   background-size: 16%;
 }
 
@@ -95,10 +157,13 @@ body {
   background-image: url(../assets/trash.svg);
 }
 
-.header-nav {
+/*----- Sub Nav -----*/
+.sub-nav {
   align-self: flex-end;
+  width: 95%;
+  margin: 0 auto;
 }
-.header-tag {
+.sub-tag {
   display: inline-block;
   color: #9EA3A8;
   text-decoration: none;
@@ -110,7 +175,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.header-tag:hover {
+.sub-tag:hover {
   color: #6C6D73;
   border-bottom: 5px solid #14A0FE;
 }
@@ -121,6 +186,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   padding-top: 60px;
+  border-top: 3px solid #dddddd;
 }
 
 /*----- Donut Charts -----*/
