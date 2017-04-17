@@ -25,7 +25,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: url(../images/profile.jpg) no-repeat center;
+  background: url(../images/profile.png) no-repeat center;
   background-size: cover;
 }
 
@@ -559,8 +559,8 @@ td {
   border-radius: 50%;
   float: left;
   margin-right: 15px;
-  background: url(../images/manager.png) no-repeat center #4e4e4e;
-  background-size: 45px;
+  background: url(../images/manager.jpg) no-repeat center;
+  background-size: contain;
 }
 
 .hiring-name {
