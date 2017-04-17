@@ -9,170 +9,192 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <section>
-    <header class="header">
-      <nav class="header-nav">
-        <a class="nav-tab menu" href="#"></a>
-        <input class="search-bar" type="search" name="search" placeholder="Search for a job, task or resume">
-        <a class="nav-tab new-user" href="#"></a>
-        <a class="nav-tab notifications" href="#"></a>
-        <a class="nav-tab other" href="#"></a>
-      </nav>
-      <section class="header-info-wrapper">
-        <div class="header-info">
-          <h1>Customer Service Representative</h1>
-          <p class="location">
-            San Francisco, CA
-            <span> - </span>
-            <a class="preview-post" href="#">Preview this post</a>
-          </p>
-        </div>
-        <div class="info-btns-wrapper">
-          <button class="info-btn open" type="button" name="open">OPEN</button>
-          <button class="info-btn bookmark" type="button" name="bookmark"></button>
-          <button class="info-btn edit-info" type="button" name="edit-info"></button>
-          <button class="info-btn trash" type="button" name="trash"></button>
-        </div>
-      </section>
-      <nav class="sub-nav">
-        <a class="sub-tag" href="#" title="Summary">Summary</a>
-        <a class="sub-tag" href="#" title="Summary">Applicants</a>
-        <a class="sub-tag" href="#" title="Summary">Job Board</a>
-        <a class="sub-tag" href="#" title="Summary">Interviews</a>
-        <a class="sub-tag" href="#" title="Summary">Activity</a>
-        <a class="sub-tag" href="#" title="Summary">Broadcast</a>
-        <a class="sub-tag" href="#" title="Summary">Notifications</a>
-      </nav>
-    </header>
-    <main>
-      <section class="main-primary">
-        <section class="donut-wrapper">
-          <div class="donut-charts">
-            <div class="donut-chart applicants">
-              <div class="donut-text">
-                <h1>3,154</h1>
-                <p>applicants</p>
-              </div>
+    <section class="page-wrapper">
+      <aside class="side-bar">
+        <section class="profile-pic-section">
+          <div class="profile-pic"></div>
+          <h1 class="profile-username">Mr. Deadpool</h1>
+        </section>
+        <nav class="sb-nav sb-main">
+          <p class="sb-title">Main</p>
+          <a class="sb-tag home" href="#">Home</a>
+          <a class="sb-tag jobs" href="#">Jobs</a>
+          <a class="sb-tag sb-resume" href="#">Resumes</a>
+          <a class="sb-tag tasks" href="#">Tasks</a>
+          <a class="sb-tag calendar" href="#">Calendar</a>
+        </nav>
+        <nav class="sb-nav sb-admin">
+          <p class="sb-title">Admin</p>
+          <a class="sb-tag users" href="#">Users</a>
+          <a class="sb-tag location" href="#">Location</a>
+          <a class="sb-tag workflows" href="#">Workflows</a>
+          <a class="sb-tag boards" href="#">Job Boards</a>
+          <a class="sb-tag social" href="#">Social</a>
+        </nav>
+        <nav class="sb-nav sb-categories">
+          <p class="sb-title">Categories</p>
+          <a class="sb-tag sb-categories-tag administrative" href="#">Administrative</a>
+          <a class="sb-tag sb-categories-tag design" href="#">Design</a>
+          <a class="sb-tag sb-categories-tag executive" href="#">Executive</a>
+          <a class="sb-tag sb-categories-tag resources" href="#">Human Resources</a>
+        </nav>
+      </aside>
+      <section class="main">
+        <header class="header">
+          <nav class="header-nav">
+            <a class="nav-tab menu" href="#"></a>
+            <input class="search-bar" type="search" name="search" placeholder="Search for a job, task or resume">
+            <a class="nav-tab new-user" href="#"></a>
+            <a class="nav-tab notifications" href="#"></a>
+            <a class="nav-tab other" href="#"></a>
+          </nav>
+          <section class="header-info-wrapper">
+            <div class="header-info">
+              <h1>Customer Service Representative</h1>
+              <p class="location">
+                San Francisco, CA
+                <span> - </span>
+                <a class="preview-post" href="#">Preview this post</a>
+              </p>
             </div>
-            <div class="donut-chart interviews">
-              <div class="donut-text">
-                <h1>1,546</h1>
-                <p>interviews</p>
-              </div>
+            <div class="info-btns-wrapper">
+              <button class="info-btn open" type="button" name="open">OPEN</button>
+              <button class="info-btn bookmark" type="button" name="bookmark"></button>
+              <button class="info-btn edit-info" type="button" name="edit-info"></button>
+              <button class="info-btn trash" type="button" name="trash"></button>
             </div>
-            <div class="donut-chart forwards">
-              <div class="donut-text">
-                <h1>912</h1>
-                <p>forwards</p>
+          </section>
+          <nav class="sub-nav">
+            <a class="sub-tag" href="#" title="Summary">Summary</a>
+            <a class="sub-tag" href="#" title="Summary">Applicants</a>
+            <a class="sub-tag" href="#" title="Summary">Job Board</a>
+            <a class="sub-tag" href="#" title="Summary">Interviews</a>
+            <a class="sub-tag" href="#" title="Summary">Activity</a>
+            <a class="sub-tag" href="#" title="Summary">Broadcast</a>
+            <a class="sub-tag" href="#" title="Summary">Notifications</a>
+          </nav>
+        </header>
+        <main>
+          <section class="main-primary">
+            <section class="donut-wrapper">
+              <div class="donut-charts">
+                <div class="donut-chart applicants">
+                  <div class="donut-text">
+                    <h1>3,154</h1>
+                    <p>applicants</p>
+                  </div>
+                </div>
+                <div class="donut-chart interviews">
+                  <div class="donut-text">
+                    <h1>1,546</h1>
+                    <p>interviews</p>
+                  </div>
+                </div>
+                <div class="donut-chart forwards">
+                  <div class="donut-text">
+                    <h1>912</h1>
+                    <p>forwards</p>
+                  </div>
+                </div>
               </div>
-            </div>
+              <button class="donut-btn chart-btn" type="button" name="donut-total">TOTALS - Out of 5,231 views</button>
+            </section>
+            <section class="bar-chart-wrapper">
+              <div class="bar-chart"></div>
+              <button class="bar-btn chart-btn" type="button" name="donut-total">APPLICANTS/DAY</button>
+            </section>
+          </section>
+          <div class="separator">
+            <!-- <hr>
+            <div class="separator-icon">
+
           </div>
-          <button class="donut-btn chart-btn" type="button" name="donut-total">TOTALS - Out of 5,231 views</button>
-        </section>
-        <section class="bar-chart-wrapper">
-          <div class="bar-chart"></div>
-          <button class="bar-btn chart-btn" type="button" name="donut-total">APPLICANTS/DAY</button>
-        </section>
-      </section>
-      <div class="separator">
-        <!-- <hr>
-        <div class="separator-icon">
-
-        </div>
-        <hr>
-      </div> -->
-      <section class="main-secondary">
-
-        <table class="job-description">
-          <thead>
-            <tr class="header-row">
-              <th class="table-primary-header">Job Description</th>
-              <td class="header-data">
-                <button class="edit-btn" type="button" name="edit">edit</button>
-              </td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="table-sub-header">Position Title</th>
-              <td class="main-data">Customer Service Representative</td>
-            </tr>
-            <tr>
-              <th class="table-sub-header">Location</th>
-              <td class="main-data">San Francisco, CA</td>
-            </tr>
-            <tr>
-              <th class="table-sub-header">Employment Type</th>
-              <td class="main-data">Full-time</td>
-            </tr>
-            <tr>
-              <th class="table-sub-header">Experience</th>
-              <td class="main-data">Mid-level</td>
-            </tr>
-            <tr>
-              <th class="table-sub-header">Status</th>
-              <td class="main-data">Open</td>
-            </tr>
-            <tr>
-              <th class="table-sub-header description">Description</th>
-              <td class="main-data description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </td>
-            </tr>
-            <tr>
-              <th class="table-sub-header">Hiring Lead</th>
-              <td class="main-data">
-                <div class="hiring-img"></div>
-                <p class="hiring-name">Charles Xavier</p>
-              </td>
-            </tr>
-            <tr>
-              <th class="table-sub-header">Approved Salary</th>
-              <td class="main-data-salary">$58,000</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <section class="share-wrapper">
-          <section class="social-media-wrapper">
-            <a href="#" class="social-media-link facebook" title="Facebook">Post to Facebook</a>
-            <a href="#" class="social-media-link twitter" title="Twitter">Tweet this Job</a>
-            <a href="#" class="social-media-link linkedin" title="Linkedin">Post to Linkedin</a>
+          <hr>
+        </div> -->
+        <section class="main-secondary">
+          <table class="job-description">
+            <thead>
+              <tr class="header-row">
+                <th class="table-primary-header">Job Description</th>
+                <td class="header-data">
+                  <button class="edit-btn" type="button" name="edit">edit</button>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="table-sub-header">Position Title</th>
+                <td class="main-data">Customer Service Representative</td>
+              </tr>
+              <tr>
+                <th class="table-sub-header">Location</th>
+                <td class="main-data">San Francisco, CA</td>
+              </tr>
+              <tr>
+                <th class="table-sub-header">Employment Type</th>
+                <td class="main-data">Full-time</td>
+              </tr>
+              <tr>
+                <th class="table-sub-header">Experience</th>
+                <td class="main-data">Mid-level</td>
+              </tr>
+              <tr>
+                <th class="table-sub-header">Status</th>
+                <td class="main-data">Open</td>
+              </tr>
+              <tr>
+                <th class="table-sub-header description">Description</th>
+                <td class="main-data description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </td>
+              </tr>
+              <tr>
+                <th class="table-sub-header">Hiring Lead</th>
+                <td class="main-data">
+                  <div class="hiring-img"></div>
+                  <p class="hiring-name">Charles Xavier</p>
+                </td>
+              </tr>
+              <tr>
+                <th class="table-sub-header">Approved Salary</th>
+                <td class="main-data-salary">$58,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="share-wrapper">
+            <section class="social-media-wrapper">
+              <a href="#" class="social-media-link facebook" title="Facebook">Post to Facebook</a>
+              <a href="#" class="social-media-link twitter" title="Twitter">Tweet this Job</a>
+              <a href="#" class="social-media-link linkedin" title="Linkedin">Post to Linkedin</a>
+            </section>
+            <section class="widget-wrapper">
+              <article class="widget">
+                <h3 class="share-header job-link">Link to this Job</h3>
+                <p class="share-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <form class="widget-form" action="index.html" method="post">
+                  <input class="widget-input" type="text" name="" value="http://frontend.turing.io/projects/m1-static-comp-3.html" readonly>
+                  <button class="copy-btn" type="button" name="button">Copy</button>
+                </form>
+              </article>
+              <article class="widget">
+                <h3 class="share-header widget-embeds">Use the Button Widget</h3>
+                <p class="share-description">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+                <form class="widget-form" action="index.html" method="post">
+                  <input class="widget-input" type="text" name="" value="<script type='text/javascript'> function hello() { console.log('hello world'); }</script>" readonly>
+                  <button class="copy-btn" type="button" name="button">Copy</button>
+                </form>
+              </article>
+              <article class="widget">
+                <h3 class="share-header resume">Upload resumes by Email</h3>
+                <p class="share-description">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+                <form class="widget-form" action="index.html" method="post">
+                  <input class="widget-input" type="text" name="" value="daBoss@xmen.com" readonly>
+                </form>
+              </article>
+            </section>
           </section>
-          <section class="widget-wrapper">
-            <article class="widget">
-              <h3 class="share-header job-link">Link to this Job</h3>
-              <p class="share-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <form class="widget-form" action="index.html" method="post">
-                <input class="widget-input" type="text" name="" value="http://frontend.turing.io/projects/m1-static-comp-3.html" readonly>
-                <button class="copy-btn" type="button" name="button">Copy</button>
-              </form>
-            </article>
-            <article class="widget">
-              <h3 class="share-header widget-embeds">Use the Button Widget</h3>
-              <p class="share-description">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
-              <form class="widget-form" action="index.html" method="post">
-                <input class="widget-input" type="text" name="" value="<script type='text/javascript'> function hello() { console.log('hello world'); }</script>" readonly>
-                <button class="copy-btn" type="button" name="button">Copy</button>
-              </form>
-            </article>
-            <article class="widget">
-              <h3 class="share-header resume">Upload resumes by Email</h3>
-              <p class="share-description">You can automatically upload multiple resumes to this job by emailing the address below.</p>
-              <form class="widget-form" action="index.html" method="post">
-                <input class="widget-input" type="text" name="" value="daBoss@xmen.com" readonly>
-              </form>
-            </article>
-
-          </section>
-
         </section>
-
-      </section>
-
-    </main>
-    <aside class="side-bar">
-
-    </aside>
+      </main>
+    </section>
     </section>
   </body>
 </html>
