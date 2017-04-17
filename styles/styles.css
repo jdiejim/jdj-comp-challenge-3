@@ -42,28 +42,34 @@ body {
 
 .sb-nav {
   margin-bottom: 10px;
-  padding: 10px 20px 5px;
+  /*padding: 10px 20px 5px;*/
   border-top: 3px solid #2D3548;
 }
 
 .sb-title {
   color: #616E81;
   font-size: 10px;
+  padding: 0 15px 5px;
 }
 
 .sb-tag {
+  width: 100%;
   display: block;
   color: #9BA6B8;
   text-decoration: none;
   font-size: 10px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   font-weight: bold;
   letter-spacing: 0.1em;
-  background-position: 0 50%;
+  background-position: 15px 50%;
   background-size: 12px;
   background-repeat: no-repeat;
-  padding: 0 20px;
+  padding: 10px 35px;
+}
+.sb-tag:hover {
+  background-color: #30394A;
+  color: #FFFFFF;
 }
 
 .home {
@@ -84,7 +90,7 @@ body {
 .users {
   background-image: url(../assets/users.svg);
 }
-.location {
+.sb-location {
   background-image: url(../assets/sb-location.svg);
 }
 .workflows {
@@ -97,8 +103,39 @@ body {
   background-image: url(../assets/social.svg);
 }
 
+.home:hover {
+  background-image: url(../assets/home-hover.svg);
+}
+.jobs:hover {
+  background-image: url(../assets/jobs-hover.svg);
+}
+.sb-resume:hover {
+  background-image: url(../assets/resume-hover.svg);
+}
+.tasks:hover {
+  background-image: url(../assets/tasks-hover.svg);
+}
+.calendar:hover {
+  background-image: url(../assets/calendar-hover.svg);
+}
+.users:hover {
+  background-image: url(../assets/users-hover.svg);
+}
+.sb-location:hover {
+  background-image: url(../assets/sb-location-hover.svg);
+}
+.workflows:hover {
+  background-image: url(../assets/workflows-hover.svg);
+}
+.boards:hover {
+  background-image: url(../assets/boards-hover.svg);
+}
+.social:hover {
+  background-image: url(../assets/social-hover.svg);
+}
+
 .sb-btn-wrapper {
-  margin-bottom: 20px;
+  margin: 0 20px 20px;
   display: flex;
 }
 
