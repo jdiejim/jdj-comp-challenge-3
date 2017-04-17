@@ -69,10 +69,6 @@ body {
   padding: 0 20px;
 }
 
-.sb-categories-tag {
-  font-size: 8px;
-}
-
 .home {
   background-image: url(../assets/home.svg);
 }
@@ -103,6 +99,46 @@ body {
 .social {
   background-image: url(../assets/social.svg);
 }
+
+.sb-btn-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.sb-btn {
+  width: 14px;
+  height: 14px;
+  font-size: 8px;
+  border: none;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.sb-btn:focus {
+  outline: none;
+}
+
+.sb-btn-label {
+  color: #9BA6B8;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  margin-left: 10px;
+}
+
+.administrative {
+  background-color: #F8E409;
+  background-image: url(../assets/checked.svg);
+}
+.design {
+  background-color: #2BB0F3;
+}
+.executive {
+  background-color: #EA1D62;
+}
+.human-resources {
+  background-color: #00AE8A;
+}
+
 
 /*----- Main -----*/
 .main {
