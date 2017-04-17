@@ -413,6 +413,27 @@ body {
   width: 150px;
 }
 
+/*----- Separator -----*/
+.separator {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  margin: 20px 0 0;
+}
+.separator-icon {
+  background: url(../assets/up-arrow.svg) no-repeat center #FFFFFF;
+  background-size: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #dddddd;
+}
+
+.separator-line {
+  border: 1px solid #dddddd;
+  width: 45%;
+}
+
 /*----- Main Secondary -----*/
 .main-secondary {
   display: flex;
