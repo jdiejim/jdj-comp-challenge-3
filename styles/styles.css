@@ -12,13 +12,11 @@ body {
 /*----- Page Wrapper -----*/
 .page-wrapper {
   display: flex;
-  /*flex-wrap: wrap;*/
-  /*flex-direction: column;*/
 }
 
 /*----- Side Bar -----*/
 .side-bar {
-  width: 20%;
+  min-width: 165px;
   background-color: #354052;
 }
 
@@ -34,18 +32,17 @@ body {
 .profile-username {
   color: #9BA6B8;
   font-weight: 400;
-  font-size: 14px;
-  width: 80%;
+  font-size: 12px;
   text-align: center;
-  margin: 12px 0;
+  margin: 12px auto;
   background: url(../assets/down-arrow.svg) no-repeat;
-  background-position: 95% 50%;
-  background-size: 10px;
+  background-position: 80% 50%;
+  background-size: 8px;
 }
 
 .sb-nav {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 10px 20px 5px;
   border-top: 3px solid #2D3548;
 }
 
@@ -142,7 +139,6 @@ body {
 
 /*----- Main -----*/
 .main {
-  width: 80%;
   height: 100%;
 }
 
