@@ -192,6 +192,7 @@ body {
 
 /* NOTE: w 55 h 55  backsize 35%*/
 .nav-tab {
+  order: 1;
   width: 25%;
   height: 40px;
   background-repeat: no-repeat;
@@ -260,7 +261,6 @@ body {
   margin: 0 auto;
 }
 
-/* NOTE: font 22 for max text alin left*/
 .header-info h1 {
   margin: 0;
   color: #6C6D73;
@@ -285,7 +285,6 @@ body {
   background-size: 12px;
 }
 
-/* NOTE: refactor*/
 .location-city {
   margin: 0;
   color: #6C6D73;
@@ -312,7 +311,6 @@ body {
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 
 .info-btn {
@@ -379,7 +377,16 @@ font-size: 9px;
 }
 
 /* NOTE: tag hide make it inlineblock */
-.tag-hide {
+.tag-interviews {
+  display: none;
+}
+.tag-activity {
+  display: none;
+}
+.tag-broadcast {
+  display: none;
+}
+.tag-summary {
   display: none;
 }
 
@@ -398,6 +405,7 @@ font-size: 9px;
 .donut-wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 /* NOTE: margibottom 10px height 150px align items center remove padding */
@@ -411,19 +419,18 @@ font-size: 9px;
   margin: 0 auto;
 }
 
-/* NOTE: 110 w and h border 8px flex direction column*/
+/* NOTE: 110 w and n*/
 .donut-chart {
   margin: 0 10px;
   display: flex;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 15px solid;
+  border: 10px solid;
   border-radius: 50%;
   transform: rotate(-45deg);
 }
 
-/* NOTE: margin 0 0 5px */
 .donut-text h1 {
   margin: 40px 0 5px;
   color: #6F7E95;
@@ -728,11 +735,94 @@ td {
 }
 
 /*----- Media Queries -----*/
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 600px) {
+  /*----- Top Nav -----*/
+  .nav-tab {
+    width: 55px;
+    height: 55px;
+    background-size: 25%;
+  }
 
-}
+  .search-bar {
+    flex: 2;
+    order: 1;
+    width: 55px;
+    height: inherit;
+  }
 
+  /*----- Header Info -----*/
+  .header-info-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-@media screen and (min-width: 750px) {
+/* NOTE: fontsize 22 for bigger */
+  .header-info h1 {
+    font-size: 20px;
+    text-align: left;
+  }
 
+  .location-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .info-btns-wrapper {
+    max-width: 210px;
+    margin: 0;
+  }
+
+  /*----- Sub Nav -----*/
+  .tag-interviews {
+    display: block;
+  }
+  .tag-activity {
+    display: block;
+  }
+
+  /*----- Donut Charts -----*/
+  .donut-wrapper {
+    width: 55%;
+  }
+
+  .donut-charts {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 0 30px;
+    padding-top: 60px;
+  }
+
+  .donut-chart {
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+  }
+
+/* NOTE: fontsize 22 */
+  .donut-text h1 {
+    margin: 0 0 5px;
+    font-size: 20px;
+  }
+/* NOTE: fontsize 12 */
+  .donut-text p {
+    font-size: 8px;
+  }
+
+  /*----- Bar Chart -----*/
+  .bar-chart-wrapper {
+    width: 45%;
+    padding-top: 40px;
+  }
+
+  /*----- Social Media Wrapper -----*/
+  /* NOTE: flex direction column */
+  .social-media-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* NOTE: width 100%  44 h lh*/
+  .social-link {
+    width: 30%;
+    background-position: 15px 50%;
+  }
 }
