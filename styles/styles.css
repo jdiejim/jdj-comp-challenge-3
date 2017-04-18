@@ -502,6 +502,7 @@ td {
   width: 100%;
   padding: 10px;
   text-align: left;
+  font-size: 12px;
 }
 
 .header-row {
@@ -533,7 +534,7 @@ td {
 
 .table-sub-header {
   color: #6F7E95;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
 }
 
