@@ -53,7 +53,7 @@
       </aside>
       <section class="main">
         <header class="header">
-          <nav class="header-nav">
+          <nav class="top-nav">
             <a class="nav-tab menu" href="#"></a>
             <input class="search-bar" type="search" name="search" placeholder="Search for a job, task or resume">
             <a class="nav-tab new-user" href="#"></a>
@@ -63,11 +63,11 @@
           <section class="header-info-wrapper">
             <div class="header-info">
               <h1>Customer Service Representative</h1>
-              <p class="location">
-                Pawnee, IN
-                <span> - </span>
+              <div class="location-wrapper">
+                <div class="location-icon"></div>
+                <p class="location-city">Pawnee, IN<span class="dash">-</span></p>
                 <a class="preview-post" href="#">Preview this post</a>
-              </p>
+              </div>
             </div>
             <div class="info-btns-wrapper">
               <button class="info-btn open" type="button" name="open">OPEN</button>
@@ -80,10 +80,11 @@
             <a class="sub-tag" href="#" title="Summary">Summary</a>
             <a class="sub-tag" href="#" title="Summary">Applicants</a>
             <a class="sub-tag" href="#" title="Summary">Job Board</a>
-            <a class="sub-tag" href="#" title="Summary">Interviews</a>
-            <a class="sub-tag" href="#" title="Summary">Activity</a>
-            <a class="sub-tag" href="#" title="Summary">Broadcast</a>
-            <a class="sub-tag" href="#" title="Summary">Notifications</a>
+            <a class="sub-tag tag-hide" href="#" title="Summary">Interviews</a>
+            <a class="sub-tag tag-hide" href="#" title="Summary">Activity</a>
+            <a class="sub-tag tag-hide" href="#" title="Summary">Broadcast</a>
+            <a class="sub-tag tag-hide" href="#" title="Summary">Notifications</a>
+            <a class="sub-tag more" href="#" title="Summary">More...</a>
           </nav>
         </header>
         <main>
@@ -110,103 +111,101 @@
                 </div>
               </div>
               <button class="donut-btn" type="button" name="donut-total">TOTALS - Out of 5,231 views</button>
-            </section>
-            <section class="bar-chart-wrapper">
-              <div class="bar-chart"></div>
-              <button class="bar-btn" type="button" name="donut-total">APPLICANTS/DAY</button>
+              </section>
+              <section class="bar-chart-wrapper">
+                <div class="bar-chart"></div>
+                <button class="bar-btn" type="button" name="donut-total">APPLICANTS/DAY</button>
+              </section>
+          </section>
+          <div class="separator">
+            <hr class="separator-line">
+            <div class="separator-icon"></div>
+            <hr class="separator-line">
+          </div>
+          <section class="main-secondary">
+            <table class="job-description">
+              <thead>
+                <tr class="header-row">
+                  <th class="table-primary-header">Job Description</th>
+                  <td class="header-data">
+                    <button class="edit-btn" type="button" name="edit">edit</button>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="table-sub-header">Position Title</th>
+                  <td class="main-data">Customer Service Representative</td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header">Location</th>
+                  <td class="main-data">San Francisco, CA</td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header">Employment Type</th>
+                  <td class="main-data">Full-time</td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header">Experience</th>
+                  <td class="main-data">Mid-level</td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header">Status</th>
+                  <td class="main-data">Open</td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header description">Description</th>
+                  <td class="main-data description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header">Hiring Lead</th>
+                  <td class="main-data">
+                    <div class="hiring-img"></div>
+                    <p class="hiring-name">Ron Swanson</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="table-sub-header">Approved Salary</th>
+                  <td class="main-data-salary">$58,000</td>
+                </tr>
+              </tbody>
+            </table>
+            <section class="share-wrapper">
+              <section class="social-media-wrapper">
+                <a href="#" class="social-link facebook" title="Facebook">Post to Facebook</a>
+                <a href="#" class="social-link twitter" title="Twitter">Tweet this Job</a>
+                <a href="#" class="social-link linkedin" title="Linkedin">Post to Linkedin</a>
+              </section>
+              <section class="widget-wrapper">
+                <article class="widget">
+                  <h3 class="widget-title widget-job-link">Link to this Job</h3>
+                  <p class="widget-description">Wazup link wo the Ipsum sharing the job for. Lorem ipsum dolor sit amet. A resume website.</p>
+                  <form class="widget-form" action="index.html" method="post">
+                    <input class="widget-input" type="text" name="" value="http://frontend.turing.io/projects/m1-static-comp-3.html" readonly>
+                    <button class="copy-btn" type="button" name="button">Copy</button>
+                  </form>
+                </article>
+                <article class="widget">
+                  <h3 class="widget-title widget-embeds">Use the Button Widget</h3>
+                  <p class="widget-description">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+                  <form class="widget-form" action="index.html" method="post">
+                    <input class="widget-input" type="text" name="" value="<script type='text/javascript'> function hello() { console.log('hello world'); }</script>" readonly>
+                    <button class="copy-btn" type="button" name="button">Copy</button>
+                  </form>
+                </article>
+                <article class="widget">
+                  <h3 class="widget-title widget-resume">Upload resumes by Email</h3>
+                  <p class="widget-description">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+                  <form class="widget-form" action="index.html" method="post">
+                    <input class="widget-input" type="text" name="" value="ronswanson@gmail.com" readonly>
+                  </form>
+                </article>
+              </section>
             </section>
           </section>
-        <div class="separator">
-          <hr class="separator-line">
-          <div class="separator-icon"></div>
-          <hr class="separator-line">
-        </div>
-        <section class="main-secondary">
-          <table class="job-description">
-            <thead>
-              <tr class="header-row">
-                <th class="table-primary-header">Job Description</th>
-                <td class="header-data">
-                  <button class="edit-btn" type="button" name="edit">edit</button>
-                </td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="table-sub-header">Position Title</th>
-                <td class="main-data">Customer Service Representative</td>
-              </tr>
-              <tr>
-                <th class="table-sub-header">Location</th>
-                <td class="main-data">San Francisco, CA</td>
-              </tr>
-              <tr>
-                <th class="table-sub-header">Employment Type</th>
-                <td class="main-data">Full-time</td>
-              </tr>
-              <tr>
-                <th class="table-sub-header">Experience</th>
-                <td class="main-data">Mid-level</td>
-              </tr>
-              <tr>
-                <th class="table-sub-header">Status</th>
-                <td class="main-data">Open</td>
-              </tr>
-              <tr>
-                <th class="table-sub-header description">Description</th>
-                <td class="main-data description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </td>
-              </tr>
-              <tr>
-                <th class="table-sub-header">Hiring Lead</th>
-                <td class="main-data">
-                  <div class="hiring-img"></div>
-                  <p class="hiring-name">Ron Swanson</p>
-                </td>
-              </tr>
-              <tr>
-                <th class="table-sub-header">Approved Salary</th>
-                <td class="main-data-salary">$58,000</td>
-              </tr>
-            </tbody>
-          </table>
-          <section class="share-wrapper">
-            <section class="social-media-wrapper">
-              <a href="#" class="social-link facebook" title="Facebook">Post to Facebook</a>
-              <a href="#" class="social-link twitter" title="Twitter">Tweet this Job</a>
-              <a href="#" class="social-link linkedin" title="Linkedin">Post to Linkedin</a>
-            </section>
-            <section class="widget-wrapper">
-              <article class="widget">
-                <h3 class="widget-title widget-job-link">Link to this Job</h3>
-                <p class="widget-description">Wazup link wo the Ipsum sharing the job for. Lorem ipsum dolor sit amet. A resume website.</p>
-                <form class="widget-form" action="index.html" method="post">
-                  <input class="widget-input" type="text" name="" value="http://frontend.turing.io/projects/m1-static-comp-3.html" readonly>
-                  <button class="copy-btn" type="button" name="button">Copy</button>
-                </form>
-                <!-- <div class="widget-empty-spacer"></div> -->
-              </article>
-              <article class="widget">
-                <h3 class="widget-title widget-embeds">Use the Button Widget</h3>
-                <p class="widget-description">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
-                <form class="widget-form" action="index.html" method="post">
-                  <input class="widget-input" type="text" name="" value="<script type='text/javascript'> function hello() { console.log('hello world'); }</script>" readonly>
-                  <button class="copy-btn" type="button" name="button">Copy</button>
-                </form>
-                <!-- <div class="widget-empty-spacer"></div> -->
-              </article>
-              <article class="widget">
-                <h3 class="widget-title widget-resume">Upload resumes by Email</h3>
-                <p class="widget-description">You can automatically upload multiple resumes to this job by emailing the address below.</p>
-                <form class="widget-form" action="index.html" method="post">
-                  <input class="widget-input" type="text" name="" value="ronswanson@gmail.com" readonly>
-                </form>
-              </article>
-            </section>
-          </section>
-        </section>
-      </main>
-    </section>
+        </main>
+      </section>
     </section>
   </body>
 </html>
