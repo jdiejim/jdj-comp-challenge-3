@@ -474,10 +474,7 @@ body {
 /*----- Main Secondary -----*/
 .main-secondary {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px 10px 0;
-  width: 100%;
 }
 
 /*----- Table -----*/
@@ -485,7 +482,6 @@ body {
   background-color: #FFFFFF;
   border-collapse: collapse;
   width: 100%;
-  margin: 0 auto 20px;
 }
 thead {
   background-color: #6F7E95;
@@ -493,7 +489,7 @@ thead {
 
 tr {
   display: flex;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   flex-direction: column;
 }
@@ -530,17 +526,17 @@ td {
 }
 
 .edit-btn {
+  display: block;
   width: 65px;
-  text-align: right;
   padding: 8px 10px;
+  background: url(../assets/edit.svg) no-repeat #7C8CA8;
+  background-position: 12px 50%;
+  background-size: 12px;
   border: none;
   color: white;
-  display: block;
-  background: url(../assets/edit.svg) no-repeat #7C8CA8;
-  background-size: 12px;
-  background-position: 12px 50%;
-  text-transform: uppercase;
   font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .table-sub-header {
@@ -577,53 +573,83 @@ td {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0 0 10px;
+  /*padding: 0 0 10px;*/
 }
 
 /*----- Social Media Wrapper -----*/
-.social-media-link {
-  width: 100%;
-  display: block;
-  text-decoration: none;
-  color: #FFFFFF;
-  text-align: center;
-  line-height: 50px;
-  margin: 0 auto 15px;
+.social-media-wrapper {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .facebook {
-  background: url(../assets/facebook.svg) #4B70C2 no-repeat;
-
+  background: url(../assets/facebook.svg) #4B70C2;
 }
 .twitter {
-  background: url(../assets/twitter.svg) #03ABED no-repeat;
-
+  background: url(../assets/twitter.svg) #03ABED;
 }
 .linkedin {
-  background: url(../assets/linkedin.svg) #0381BC no-repeat;
+  background: url(../assets/linkedin.svg) #0381BC;
 }
 
-.facebook,
-.twitter,
-.linkedin {
+.social-link {
+  display: block;
+  height: 44px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
   background-position: 20px 50%;
-  background-size: 20px;
+  background-size: 15px;
+  background-repeat: no-repeat;
 }
 
 /*----- Widgets -----*/
 .widget-wrapper {
-  width: 100%;
-  margin: 0 auto;
+  height: 75%;
 }
+
 .widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 35%;
   border-bottom: 3px solid #dddddd;
-  padding: 0 0 28px;
 }
 .widget:last-child {
+  height: 30%;
+  justify-content: flex-end;
   border: none;
-  padding: 0;
 }
+
+.widget-job-link {
+  background: url(../assets/globe.svg);
+}
+.widget-embeds {
+  background: url(../assets/widget.svg);
+}
+.widget-resume {
+  background: url(../assets/plane.svg);
+}
+.widget-title {
+  width: 100%;
+  padding-left: 30px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 20px;
+  color: #6F7E95;
+  font-size: 16px;
+}
+
+.widget-description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .widget-form {
   display: flex;
 }
@@ -632,47 +658,22 @@ td {
   width: 80%;
   padding: 10px;
   border: none;
-  margin: 0;
   text-overflow: ellipsis;
 }
 .widget-input:last-child {
   width: 100%;
 }
+
 .copy-btn {
-  background-color: #49B9BF;
-  color: #FFFFFF;
-  border: none;
   width: 20%;
   padding: 10px;
+  background-color: #49B9BF;
+  border: none;
+  color: #FFFFFF;
 }
 
-.share-header {
-  color: #6F7E95;
-  text-indent: 30px;
-}
-
-.job-link {
-  background: url(../assets/globe.svg) no-repeat;
-
-}
-.widget-embeds {
-  background: url(../assets/widget.svg) no-repeat;
-
-}
-.resume {
-  background: url(../assets/plane.svg) no-repeat;
-}
-
-.job-link,
-.widget-embeds,
-.resume {
-  background-position: 0 50%;
-  background-size: 20px;
-}
-
-.share-description {
-  font-size: 12px;
-  line-height: 16px;
+.widget-empty-spacer {
+  height: 25%;
 }
 
 @media screen and (min-width: 460px) {
@@ -751,19 +752,17 @@ td {
   /*----- Table -----*/
   .job-description {
     width: 60%;
-    margin: 0;
   }
 
-  /* FIXME: sizing problem between table and share */
   /*----- Share Wrapper -----*/
   .share-wrapper {
-    width: 35%;
+    width: 30%;
+  }
+  .social-media-wrapper,
+  .widget-wrapper {
+    max-width: 350px;
   }
 
-  /*----- Widgets -----*/
-  .social-media-link,
-  .widget-wrapper {
-    max-width: 300px;
-    min-width: 225px;
-  }
+
+
 }
