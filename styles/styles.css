@@ -12,10 +12,12 @@ body {
 /*----- Page Wrapper -----*/
 .page-wrapper {
   display: flex;
+  width: 100%;
 }
 
 /*----- Side Bar -----*/
 .side-bar {
+  display: none;
   min-width: 162px;
   background-color: #354052;
 }
@@ -173,46 +175,51 @@ body {
 
 /*----- Main -----*/
 .main {
-  height: 100%;
+  width: 100%;
 }
 
 /*----- Header -----*/
 .header {
   background-color: #FFFFFF;
-  width: 100%;
 }
 
-/*----- Header Nav -----*/
-.header-nav {
+/*----- Top Nav -----*/
+.top-nav {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
+/* NOTE: w 55 h 55  backsize 35%*/
 .nav-tab {
-  width: 55px;
-  height: 55px;
-  border-right: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  display: inline-block;
+  width: 25%;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 35%;
+  background-size: 18px;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 .nav-tab:hover {
   background-color: #16A4FA;
 }
 
+/* NOTE: back pos 15px 50% siz 18px height none  border top normal no hover effect*/
 .search-bar {
-  flex: 2;
+  order: 2;
+  width: 100%;
+  height: 40px;
+  padding-left: 45px;
   background: url(../assets/search.svg) no-repeat;
-  border: none;
-  border-right: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
   background-position: 15px 50%;
   background-size: 18px;
-  padding-left: 45px;
+  border: none;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   font-size: 14px;
+}
+.search-bar:focus {
+  outline-color: #cdcdcd;
 }
 
 .menu {
@@ -243,75 +250,93 @@ body {
  background-image: url(../assets/other-hover.svg);
 }
 
+/* NOTE: padding max 30px */
 /*----- Header Info -----*/
 .header-info-wrapper {
-  width: 95%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px 0 30px;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
 }
 
+/* NOTE: font 22 for max text alin left*/
 .header-info h1 {
-  font-weight: 400;
-  font-size: 22px;
-  color: #6C6D73;
   margin: 0;
+  color: #6C6D73;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.header-info p {
-  margin: 10px 0;
-  color: #6C6D73;
-  font-weight: 400;
-  font-size: 12px;
+.location-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0 15px;
+}
+
+.location-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
   background: url(../assets/location.svg) no-repeat;
-  background-position: 0 50%;
-  background-size: 14px;
-  padding-left: 16px;
+  background-position: center;
+  background-size: 12px;
 }
-.header-info span {
+
+/* NOTE: refactor*/
+.location-city {
+  margin: 0;
   color: #6C6D73;
-  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 400;
 }
+
+.dash {
+  color: #6C6D73;
+  padding: 0 5px;
+}
+
 .preview-post {
   color: #7BC5EC;
+  font-size: 12px;
   text-decoration: none;
-  padding-left: 5px;
 }
 .preview-post:hover {
   text-decoration: underline;
 }
 
 .info-btns-wrapper {
-  text-align: center;
   display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .info-btn {
-  margin: 0 10px;
-  display: inline-block;
-  border-radius: 50%;
   width: 35px;
   height: 35px;
   background-color: #FFFFFF;
-  border: 3px solid #dddddd;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
-  background-repeat: no-repeat;
+  border: 3px solid #dddddd;
+  border-radius: 50%;
 }
 
 .open {
   width: 80px;
-  border-radius: 20px;
-  text-align: right;
   padding-right: 12px;
-  font-weight: bold;
-  font-size: 12px;
-  color: #6C6D73;
   background-image: url(../assets/open.svg);
   background-position: 12px 50%;
   background-size: 16%;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6C6D73;
+  text-align: right;
 }
 
 .bookmark {
@@ -325,66 +350,82 @@ body {
 }
 
 /*----- Sub Nav -----*/
+/* NOTE: 90% w  align slef flex end*/
 .sub-nav {
-  align-self: flex-end;
-  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
   margin: 0 auto;
 }
+
+/* NOTE: display: inline-block;
+margin: 0 25px 0 0;
+font-size: 9px;
+ */
 .sub-tag {
-  display: inline-block;
-  color: #9EA3A8;
-  text-decoration: none;
-  margin: 0 25px 0 0;
   padding-bottom: 10px;
   border-bottom: 5px solid #FFFFFF;
-  font-size: 9px;
+  color: #9EA3A8;
+  font-size: 10px;
   font-weight: bold;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .sub-tag:hover {
   color: #6C6D73;
   border-bottom: 5px solid #14A0FE;
 }
 
+/* NOTE: tag hide make it inlineblock */
+.tag-hide {
+  display: none;
+}
+
 /*----- Main Primary -----*/
+/* NOTE: padding top 30px remove flex wrap */
 .main-primary {
   display: flex;
-  width: 100%;
-  padding-top: 30px;
-  border-top: 3px solid #dddddd;
+  flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
+  border-top: 3px solid #dddddd;
 }
 
 /*----- Donut Charts -----*/
+/* NOTE: reduce w to 50% */
 .donut-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
 }
 
+/* NOTE: margibottom 10px height 150px align items center remove padding */
 .donut-charts {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
+  width: 88%;
+  height: 130px;
+  padding-top: 30px;
+  margin: 0 auto;
 }
 
+/* NOTE: 110 w and h border 8px flex direction column*/
 .donut-chart {
+  margin: 0 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 110px;
-  height: 110px;
-  border: 8px solid;
+  width: 50px;
+  height: 50px;
+  border: 15px solid;
   border-radius: 50%;
   transform: rotate(-45deg);
 }
 
+/* NOTE: margin 0 0 5px */
 .donut-text h1 {
-  margin: 0 0 5px;
+  margin: 40px 0 5px;
   color: #6F7E95;
   font-family: 'Ubuntu', sans-serif;
   font-size: 25px;
@@ -412,12 +453,13 @@ body {
   border-color: #DBE4E9 #DBE4E9 #DBE4E9 #B369B2;
 }
 
+/* NOTE: margin 0 auto */
 .donut-btn,
 .bar-btn {
   align-self: center;
   width: 200px;
   height: 35px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   background-color: #FFFFFF;
   border: 3px solid #dddddd;
   border-radius: 50px;
@@ -426,16 +468,18 @@ body {
 }
 
 /*----- Bar Chart -----*/
+/* NOTE: w 45% remove padding */
 .bar-chart-wrapper {
-  width: 45%;
   display: flex;
   flex-wrap: wrap;
+  width: 88%;
+  padding-top: 10px;
 }
 
+/* NOTE: h 150px marginbottom 10px */
 .bar-chart {
   width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
+  height: 120px;
   background: url(../images/bar-chart.png) no-repeat center;
   background-size: contain;
 }
@@ -445,10 +489,13 @@ body {
 }
 
 /*----- Separator -----*/
+/* NOTE: remove width margin */
 .separator {
   display: flex;
-  padding: 30px 0;
   align-items: center;
+  width: 90%;
+  padding: 30px 0;
+  margin: 0 auto;
 }
 
 .separator-icon {
@@ -468,14 +515,17 @@ body {
 /*----- Main Secondary -----*/
 .main-secondary {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 /*----- Table -----*/
+/* NOTE: remove margin 0 auto */
 .job-description {
+  width: 90%;
+  margin: 0 auto 20px;
   background-color: #FFFFFF;
   border-collapse: collapse;
-  width: 100%;
 }
 thead {
   background-color: #6F7E95;
@@ -533,6 +583,9 @@ td {
   text-align: right;
   text-transform: uppercase;
 }
+.edit-btn:hover {
+  background-color: #8d9aaf;
+}
 
 .table-sub-header {
   color: #6F7E95;
@@ -564,16 +617,17 @@ td {
 }
 
 /*----- Share Wrapper -----*/
+/* NOTE: remove margin padding 0 0 10px*/
 .share-wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  /*padding: 0 0 10px;*/
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*----- Social Media Wrapper -----*/
+/* NOTE: remove margin add heaigh 25% */
 .social-media-wrapper {
-  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -589,28 +643,34 @@ td {
   background: url(../assets/linkedin.svg) #0381BC;
 }
 
+/* NOTE: 44 lh and h fontsize 14 remove marginbottom*/
 .social-link {
   display: block;
-  height: 44px;
+  height: 40px;
+  margin-top: 10px;
+  background-position: 20px 50%;
+  background-repeat: no-repeat;
+  background-size: 15px;
   color: #FFFFFF;
-  font-size: 14px;
-  line-height: 44px;
+  font-size: 12px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
-  background-position: 20px 50%;
-  background-size: 15px;
-  background-repeat: no-repeat;
 }
 
 /*----- Widgets -----*/
+/* NOTE: add height 75% remove margin*/
 .widget-wrapper {
-  height: 75%;
+  /*height: 75%;*/
+  /*margin-bottom: 40px;*/
 }
 
+/* NOTE: remove padding */
 .widget {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px 0;
   height: 35%;
   border-bottom: 3px solid #dddddd;
 }
@@ -667,97 +727,12 @@ td {
   color: #FFFFFF;
 }
 
-.widget-empty-spacer {
-  height: 25%;
+/*----- Media Queries -----*/
+@media screen and (min-width: 460px) {
+
 }
 
-@media screen and (min-width: 460px) {
-  /*----- Main Primary -----*/
-  /*----- Donut Charts -----*/
-  .donut-wrapper {
-    /*width: 100%;*/
-  }
-
-  .donut-charts {
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-  }
-
-  /*----- Bar Chart -----*/
-  .bar-chart-wrapper {
-    /*width: 100%;*/
-  }
-  /*----- Main Secondary -----*/
-  /*----- Table -----*/
-  tr {
-    flex-direction: row;
-  }
-
-  th {
-    width: 30%;
-  }
-
-  td {
-    width: 70%;
-  }
-
-  th,
-  td {
-    padding: 20px 0;
-  }
-
-  .header-row {
-    font-size: 14px;
-  }
-
-  .header-data {
-    display: block;
-  }
-
-  .header-data,
-  .main-data,
-  .main-data-salary {
-    padding-left: 20px;
-  }
-
-  /* FIXME: social media btn sizes */
 
 @media screen and (min-width: 750px) {
-  /*----- Main Primary -----*/
-  /*----- Donut Charts -----*/
-  .donut-wrapper {
-    /*width: 60%;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
-  }
-
-  .donut-charts {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-around;*/
-  }
-
-  /*----- Bar Chart -----*/
-  .bar-chart-wrapper {
-    /*width: 40%;*/
-  }
-
-  /*----- Main Secondary -----*/
-  /*----- Table -----*/
-  .job-description {
-    width: 60%;
-  }
-
-  /*----- Share Wrapper -----*/
-  .share-wrapper {
-    width: 30%;
-  }
-  .social-media-wrapper,
-  .widget-wrapper {
-    max-width: 350px;
-  }
-
-
 
 }
