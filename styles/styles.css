@@ -393,7 +393,6 @@ body {
 }
 
 /*----- Main Primary -----*/
-/* NOTE: padding top 30px remove flex wrap */
 .main-primary {
   display: flex;
   flex-wrap: wrap;
@@ -403,14 +402,12 @@ body {
 }
 
 /*----- Donut Charts -----*/
-/* NOTE: reduce w to 50% */
 .donut-wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-/* NOTE: margibottom 10px height 150px align items center remove padding */
 .donut-charts {
   display: flex;
   flex-wrap: wrap;
@@ -421,7 +418,6 @@ body {
   margin: 0 auto;
 }
 
-/* NOTE: 110 w and n*/
 .donut-chart {
   margin: 0 10px;
   display: flex;
@@ -462,7 +458,6 @@ body {
   border-color: #DBE4E9 #DBE4E9 #DBE4E9 #B369B2;
 }
 
-/* NOTE: margin 0 auto */
 .donut-btn,
 .bar-btn {
   align-self: center;
@@ -482,7 +477,6 @@ body {
 }
 
 /*----- Bar Chart -----*/
-/* NOTE: w 45% remove padding */
 .bar-chart-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -490,7 +484,6 @@ body {
   padding-top: 10px;
 }
 
-/* NOTE: h 150px marginbottom 10px */
 .bar-chart {
   width: 100%;
   height: 120px;
@@ -503,7 +496,6 @@ body {
 }
 
 /*----- Separator -----*/
-/* NOTE: remove width margin */
 .separator {
   display: flex;
   align-items: center;
@@ -534,7 +526,6 @@ body {
 }
 
 /*----- Table -----*/
-/* NOTE: remove margin 0 auto */
 .job-description {
   width: 90%;
   margin: 0 auto 20px;
@@ -632,7 +623,6 @@ td {
 }
 
 /*----- Share Wrapper -----*/
-/* NOTE: remove margin padding 0 0 10px*/
 .share-wrapper {
   display: flex;
   flex-direction: column;
@@ -641,7 +631,6 @@ td {
 }
 
 /*----- Social Media Wrapper -----*/
-/* NOTE: remove margin add heaigh 25% */
 .social-media-wrapper {
   display: flex;
   flex-direction: column;
@@ -667,7 +656,6 @@ td {
   background-color: #4592b6;
 }
 
-/* NOTE: 44 lh and h fontsize 14 remove marginbottom*/
 .social-link {
   display: block;
   height: 40px;
@@ -684,13 +672,6 @@ td {
 }
 
 /*----- Widgets -----*/
-/* NOTE: add height 75% remove margin*/
-.widget-wrapper {
-  /*height: 75%;*/
-  /*margin-bottom: 40px;*/
-}
-
-/* NOTE: remove padding */
 .widget {
   display: flex;
   flex-direction: column;
@@ -819,12 +800,11 @@ td {
     height: 90px;
   }
 
-/* NOTE: fontsize 22 */
   .donut-text h1 {
     margin: 0 0 5px;
     font-size: 20px;
   }
-/* NOTE: fontsize 12 */
+
   .donut-text p {
     font-size: 8px;
   }
@@ -841,12 +821,11 @@ td {
   }
 
   /*----- Social Media Wrapper -----*/
-  /* NOTE: flex direction column */
   .social-media-wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
-  /* NOTE: width 100%  44 h lh*/
+
   .social-link {
     width: 30%;
     background-position: 15px 50%;
@@ -874,7 +853,6 @@ td {
     text-align: left;
   }
 
-  /* NOTE: increase to 14 */
   .table-primary-header {
     font-size: 10px;
   }
@@ -883,7 +861,6 @@ td {
     justify-content: flex-start;
   }
 
-/* NOTE: increase to 12 */
   .edit-btn {
     font-size: 10px;
   }
@@ -946,9 +923,11 @@ td {
   .tag-broadcast {
     display: block;
   }
+  
   .tag-summary {
     display: block;
   }
+  
   .tag-more {
     display: none;
   }
