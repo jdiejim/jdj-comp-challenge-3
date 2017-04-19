@@ -72,6 +72,7 @@ body {
 .sb-tag:hover {
   background-color: #30394A;
   color: #FFFFFF;
+  border-left: 3px solid #14A0FE;
 }
 
 .home {
@@ -100,6 +101,9 @@ body {
 }
 .boards {
   background-image: url(../assets/boards.svg);
+  background-color: #30394A;
+  color: #FFFFFF;
+  border-left: 3px solid #14A0FE;
 }
 .social {
   background-image: url(../assets/social.svg);
@@ -888,7 +892,7 @@ td {
 
   /*----- Widgets -----*/
   .widget {
-    padding: 20px 0 20px;
+    padding: 27px 0 20px;
   }
 }
 
@@ -984,5 +988,13 @@ td {
   .donut-chart {
     width: 120px;
     height: 120px;
+  }
+
+  .donut-text h1 {
+    font-size: 32px;
+  }
+
+  .donut-text p {
+    font-size: 12px;
   }
 }
