@@ -17,9 +17,11 @@ body {
 
 /*----- Side Bar -----*/
 .side-bar {
-  display: none;
+  position: absolute;
+  left: -1000px;
   min-width: 162px;
   background-color: #354052;
+  transition: left 0.2s;
 }
 
 .profile-pic {
@@ -868,6 +870,7 @@ td {
   /*----- Share Wrapper -----*/
   .share-wrapper {
     width: 35%;
+    height: inherit;
   }
 
   .social-media-wrapper {
@@ -897,7 +900,8 @@ td {
 @media screen and (min-width: 765px) {
   /*----- Side Bar -----*/
   .side-bar {
-    display: block;
+    position: relative;
+    left: 0;
   }
 
   /*----- Header Info -----*/
@@ -923,11 +927,11 @@ td {
   .tag-broadcast {
     display: block;
   }
-  
+
   .tag-summary {
     display: block;
   }
-  
+
   .tag-more {
     display: none;
   }
