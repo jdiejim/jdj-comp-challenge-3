@@ -250,7 +250,6 @@ body {
  background-image: url(../assets/other-hover.svg);
 }
 
-/* NOTE: padding max 30px */
 /*----- Header Info -----*/
 .header-info-wrapper {
   display: flex;
@@ -973,8 +972,39 @@ td {
 
 @media screen and (min-width: 850px) {
   /*----- Donut Charts -----*/
+  .donut-wrapper {
+    max-width: 550px;
+  }
+
   .donut-chart {
     width: 105px;
     height: 105px;
+  }
+
+  /*----- Bar Chart -----*/
+  .bar-chart-wrapper {
+    max-width: 350px;
+  }
+
+  /*----- Table -----*/
+  .job-description {
+    max-width: 550px;
+  }
+
+  /*----- Share Wrapper -----*/
+  .share-wrapper {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  /*----- Donut Charts -----*/
+  .donut-charts {
+    padding-top: 40px;
+  }
+
+  .donut-chart {
+    width: 120px;
+    height: 120px;
   }
 }
